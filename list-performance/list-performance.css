@@ -1,0 +1,14 @@
+
+#sortBy {
+  margin-bottom: 20px;
+}
+
+.sortBy {
+  border: 1px solid black;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.sortBy.selected {
+  background: yellow;
+}

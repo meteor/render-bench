@@ -1,0 +1,25 @@
+<head>
+  <title>list-performance</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+<div id="sortBy">
+Sort by:
+<span class="sortByWhich">
+  {{#each sortDescs}}
+    <span class="sortBy {{sortByClass name}}">{{title}}</span>
+  {{/each}}
+</span>
+</div>
+
+<table>
+{{#each words}}
+<tr><td>{{word}}</td><td>{{score}}</td></tr>
+{{/each}}
+</table>
+
+</template>
